@@ -1,0 +1,242 @@
+:root {
+  --verde-escuro: #aa9723;
+  --dourado-claro: #ddd49f;
+  --dourado-medio: #c7b64c;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden !important;
+}
+*:target,
+*:focus {
+  outline: transparent !important;
+}
+a,
+button {
+  text-decoration: none !important;
+  -webkit-transition: 0.22s;
+}
+a *:not(g, path),
+button *:not(g, path) {
+  transition: 0.15s;
+}
+a::after,
+a::before {
+  -webkit-transition: 0.3s;
+}
+a:hover::after,
+a:hover::before {
+  transition: 0.3s;
+}
+a:hover,
+button:hover {
+  transition: 0.15s;
+}
+a:hover *:not(g, path),
+button:hover *:not(g, path) {
+  transition: 0.15s;
+}
+ol,
+ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+.cep-mask,
+.cpf-mask,
+.cvv-mask,
+.phone-mask,
+.number-mask,
+.date-mask {
+  display: block;
+}
+[class*="container-arrigo"] {
+  max-width: 1360px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  background-color: black;
+}
+.bt {
+  padding: 0 60px;
+  height: 49px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 1px;
+  border-style: solid;
+}
+.bt.dourado {
+  background-color: var(--dourado-medio);
+  border-color: var(--dourado-medio);
+}
+.bt.branco {
+  background-color: #fff;
+  border-color: #fff;
+}
+header {
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+header .container-arrigo {
+  max-width: 1660px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .box-right a {
+  color: #fff;
+}
+header .box-right a + * {
+  margin-left: 65px;
+}
+#banner .bg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+#banner .bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.22);
+}
+#banner .text {
+  z-index: 2;
+}
+#banner .text h1 + * {
+  margin-top: 95px;
+}
+#banner h1 {
+  color: #fff;
+  margin-bottom: 0;
+  max-width: 696px;
+  text-align: center;
+}
+#banner .banner-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#banner img {
+  position: absolute;
+  width: 442px;
+  bottom: 30px;
+  right: 30px;
+}
+#banner i {
+  width: 60px;
+  height: 60px;
+}
+#banner i svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+#categorias-moveis {
+  background-color: #fcfcfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 35px;
+}
+#categorias-moveis .card-moveis + * {
+  margin-left: 45px;
+}
+#sobre {
+  display: flex;
+  padding: 45px 0 65px;
+  background-color: var(--dourado-medio);
+  position: relative;
+}
+#sobre .image {
+  width: 100%;
+}
+#sobre .image img {
+  bottom: -13px;
+  position: absolute;
+  padding-left: 275px;
+}
+#sobre .box-sobre {
+  width: 100%;
+}
+#sobre .box-sobre .text {
+  width: 100%;
+  color: #fff;
+}
+#sobre .box-sobre .text h2 + * {
+  margin-top: 25px;
+}
+#sobre .box-sobre .text p {
+  width: 575px;
+  margin-bottom: 0;
+}
+#sobre .box-sobre .text p + * {
+  margin-top: 50px;
+}
+#sobre .box-sobre .text a {
+  color: var(--dourado-medio);
+  width: 315px;
+}
+#sobre .box-sobre text + * {
+  margin-left: 50px;
+}
+#pergunta-moveis {
+  padding: 80px 0 105px;
+  text-align: center;
+  background-color: #fcfcfc;
+  position: relative;
+}
+#pergunta-moveis h2 {
+  color: var(--dourado-medio);
+}
+#pergunta-moveis h2 + * {
+  margin-top: 55px;
+}
+#pergunta-moveis .box-icones {
+  display: flex;
+  justify-content: center;
+  color: #0a0a0a;
+}
+#pergunta-moveis .box-icones .card-icones {
+  width: 230px;
+}
+#pergunta-moveis .box-icones .card-icones i + * {
+  margin-top: 30px;
+}
+#pergunta-moveis .box-icones .card-icones + * {
+  margin-left: 125px;
+}
+#pergunta-moveis .image-top {
+  position: absolute;
+  width: 205px;
+  top: 15px;
+  right: 30px;
+}
+#pergunta-moveis .image-bottom {
+  position: absolute;
+  width: 205px;
+  bottom: 15px;
+  left: 30px;
+}

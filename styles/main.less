@@ -1,0 +1,306 @@
+:root {
+    --verde-escuro: #aa9723;;
+    --dourado-claro: #ddd49f;
+    --dourado-medio: #c7b64c;;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+
+*:target,
+*:focus {
+    outline: transparent !important;
+}
+
+a,
+button {
+    text-decoration: none !important;
+    -webkit-transition: 0.22s;
+
+
+    *:not(g, path) {
+        transition: 0.15s;
+    }
+}
+
+a::after,
+a::before {
+    -webkit-transition: 0.3s;
+}
+
+a:hover::after,
+a:hover::before {
+    transition: 0.3s;
+}
+
+a:hover,
+button:hover {
+    transition: 0.15s;
+
+    *:not(g, path) {
+        transition: 0.15s;
+    }
+}
+
+ol,
+ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.cep-mask,
+.cpf-mask,
+.cvv-mask,
+.phone-mask,
+.number-mask,
+.date-mask {
+    display: block;
+}
+
+[class*="container-arrigo"] {
+    max-width: 1360px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: black;
+}
+
+.bt {
+    padding: 0 60px;
+    height: 49px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.bt.dourado {
+    background-color: var(--dourado-medio);
+    border-color: var(--dourado-medio);
+}
+
+.bt.branco {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+header {
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+
+    .container-arrigo {
+        max-width: 1660px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .box-right {
+        a{
+            color: #fff;
+        }
+
+        a + * {
+            margin-left: 65px;
+        }
+    }
+}
+
+#banner {
+
+    .bg {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+    
+
+    .bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        background-color: rgba(0, 0, 0, .22);
+    }
+
+    .text {
+        z-index: 2;
+
+        h1 + * {
+            margin-top: 95px;
+        }
+    }
+
+    h1 {
+        color: #fff;
+        margin-bottom: 0;
+        max-width: 696px;
+        text-align: center;
+
+    }
+
+    .banner-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    img {
+        position: absolute;
+        width: 442px;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    i {
+        width: 60px;
+        height: 60px;
+        svg {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            object-fit: contain;
+            object-position: center center;
+        }
+    }
+
+}
+
+#categorias-moveis {
+    background-color: #fcfcfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 35px;
+
+
+    .card-moveis + * {
+        margin-left: 45px;
+    }
+}
+
+#sobre {
+    display: flex;
+    padding: 45px 0 65px;
+    background-color: var(--dourado-medio);
+    position: relative;
+
+    .image {
+        width: 100%;
+
+        img {
+            bottom: -13px;
+            position: absolute;
+            padding-left: 275px;
+        }
+    }
+
+    .box-sobre {
+        width: 100%;
+        .text {
+            width: 100%;
+            color: #fff;
+    
+            h2 + * {
+                margin-top: 25px;
+            } 
+    
+            p {
+                width: 575px;
+                margin-bottom: 0;
+            }
+    
+            p + * {
+                margin-top: 50px;
+            }
+    
+            a {
+                color: var(--dourado-medio);
+                width: 315px;
+            }
+        }
+    
+        text + * {
+            margin-left: 50px;
+        }
+    }
+
+    
+}
+
+#pergunta-moveis {
+    padding: 80px 0 105px;
+    text-align: center;
+    background-color: #fcfcfc;
+    position: relative;
+
+    h2 {
+        color: var(--dourado-medio)
+    }
+
+    h2 + * {
+        margin-top: 55px;
+    }
+
+    .box-icones {
+        display: flex;
+        justify-content: center;
+        color: #0a0a0a;  
+
+        .card-icones {
+            width: 230px;
+
+            svg {
+                
+            }
+
+            i + * {
+                margin-top: 30px;
+            }
+        }
+
+        .card-icones + * {
+            margin-left: 125px;
+        }
+    }
+
+    .image-top {
+        position: absolute;
+        width: 205px;
+        top: 15px;
+        right: 30px;
+    }
+
+    .image-bottom {
+        position: absolute;
+        width: 205px;
+        bottom: 15px;
+        left: 30px;
+    }
+}
