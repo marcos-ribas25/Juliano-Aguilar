@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'rotunda';
+  src: url('../fonts/Rotunda-Bold.otf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'rotunda';
+  src: url('../fonts/Rotunda-Medium.otf') format('truetype');
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+strong,
+time,
+address,
+i,
+a,
+b,
+label,
+li,
+td {
+  text-rendering: optimizeLegibility !important;
+}
+[class*="-bebas"] {
+  font-family: Bebas;
+}
+[class*="-rotunda"] {
+  font-family: Rotunda;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+/*Font Weights----------------------------------------------------------*/
+[class*="-bold"] {
+  font-weight: 700;
+}
+[class*="-semibold"] {
+  font-weight: 600;
+}
+[class*="-medium"] {
+  font-weight: 500;
+}
+[class*="-regular"] {
+  font-weight: 400;
+}
+[class*="-light"] {
+  font-weight: 300;
+}
+[class*="-italic"] {
+  font-style: italic !important;
+}
+[class*="titulo-1"] {
+  font-size: 92px;
+}
+[class*="titulo-2"] {
+  font-size: 64px;
+}
+[class*="titulo-3"] {
+  font-size: 18px;
+}
+[class*="paragrafo-1"] {
+  font-size: 18px;
+}
+[class*="paragrafo-2"] {
+  font-size: 16px;
+}
+[class*="link-1"] {
+  font-size: 18px;
+}
+[class*="link-2"] {
+  font-size: 16px;
+}
