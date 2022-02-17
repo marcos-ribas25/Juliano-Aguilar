@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1400px) {
+  header .box-right a + * {
+    margin-left: 40px;
+  }
+  #banner .text h1 {
+    max-width: 658px;
+  }
+  #banner .text h1 + * {
+    margin-top: 80px;
+  }
+}

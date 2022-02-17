@@ -1,0 +1,17 @@
+@media only screen and (max-width: 550px) {
+  header .container-arrigo .logo-header {
+    max-width: 212px;
+  }
+  #banner .bt.grande {
+    width: 270px;
+  }
+  #banner .text h1 {
+    max-width: 454px;
+  }
+  #banner .text h1 + * {
+    margin-top: 50px;
+  }
+  #categorias-moveis {
+    padding: 15px 5px;
+  }
+}

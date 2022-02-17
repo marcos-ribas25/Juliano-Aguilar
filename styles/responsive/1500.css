@@ -1,0 +1,8 @@
+@media only screen and (max-width: 1500px) {
+  header .container-arrigo {
+    max-width: 1380px;
+  }
+  header .box-right a + * {
+    margin-left: 60px;
+  }
+}

@@ -1,0 +1,8 @@
+@media only screen and (max-width: 450px) {
+  #banner .text h1 {
+    max-width: 378px;
+  }
+  #banner .text .text + * {
+    margin-top: 40px;
+  }
+}

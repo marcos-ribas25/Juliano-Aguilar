@@ -69,28 +69,58 @@
     <link href="./styles/fonts.css" rel="stylesheet">
     <link href="./styles/main.css" rel="stylesheet">
     <link href="./styles/responsive.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/responsive/1700.css">
+    <link rel="stylesheet" href="./styles/responsive/1700.css">
+    <link rel="stylesheet" href="./styles/responsive/1500.css">
     <link rel="stylesheet" href="./styles/responsive/1400.css">
     <link rel="stylesheet" href="./styles/responsive/1300.css">
     <link rel="stylesheet" href="./styles/responsive/1200.css">
+    <link rel="stylesheet" href="./styles/responsive/1100.css">
     <link rel="stylesheet" href="./styles/responsive/1024.css">
     <link rel="stylesheet" href="./styles/responsive/768.css">
+    <link rel="stylesheet" href="./styles/responsive/550.css">
+    <link rel="stylesheet" href="./styles/responsive/450.css">
+    <link rel="stylesheet" href="./styles/responsive/350.css">
 </head>
 
 <body>
+    <div class="menu">
+        <div class="background">
+
+        </div>
+
+        <div class="box">
+            <ul>
+                <li><a class="box-link link-1-regular-rotunda" href="index.html">início</a></li>
+                <li><a class="box-link link-1-regular-rotunda" href="">ambientes</a></li>
+                <li><a class="box-link link-1-regular-rotunda" href="sobre.html">sobre a arrigo</a></li>
+                <li><a class="box-link link-1-regular-rotunda" href="">seu projeto</a></li>
+                <li><a class="box-link link-1-regular-rotunda" href="">contato</a></li>
+                <li><a class="box-link link-1-regular-rotunda" href="">móveis decorativos</a></li>
+            </ul>
+        </div>
+    </div>
+
     <header>
         <div class="container-arrigo">
             <a href="index.html">
-                <img src="images/logo.png" alt="Logo Arrigo">
+                <img class="logo-header" src="images/logo.png" alt="Logo Arrigo">
             </a>
 
             <nav class="box-right">
-                <a class="link-1-regular-rotunda" href="index.html">início</a>
-                <a class="link-1-regular-rotunda" href="ambientes.html">ambientes</a>
-                <a class="link-1-regular-rotunda" href="sobre.html">sobre a arrigo</a>
-                <a class="link-1-regular-rotunda" href="projeto.html">seu projeto</a>
-                <a class="link-1-regular-rotunda" href="contato.html">contato</a>
-                <a class="link-1-regular-rotunda" href="moveis-decorativos.html">móveis decorativos</a>
+                <a class="link-3-regular-rotunda" href="index.html">início</a>
+                <a class="link-3-regular-rotunda" href="ambientes.html">ambientes</a>
+                <a class="link-3-regular-rotunda" href="sobre.html">sobre a arrigo</a>
+                <a class="link-3-regular-rotunda" href="projeto.html">seu projeto</a>
+                <a class="link-3-regular-rotunda" href="contato.html">contato</a>
+                <a class="link-3-regular-rotunda" href="moveis-decorativos.html">móveis decorativos</a>
             </nav>
+
+            <div class="block-bar">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     </header>
 
@@ -102,7 +132,7 @@
                 </h1>
 
                 <div class="buttons">
-                    <a href="contato.html" class="bt grande dourado link-1-bold-rotunda uppercase">solicite um
+                    <a href="contato.html" class="bt grande dourado link-3-bold-rotunda uppercase">solicite um
                         orçamento</a>
                 </div>
             </div>
@@ -129,22 +159,53 @@
     </section>
 
     <section id="categorias-moveis">
-        <div class="card-moveis">
-            <img src="images/card-moveis-1.jpg" alt="Imagem Móveis 1">
+        <div class="aparecer container-categorias">
+            <div class="card-moveis">
+                <img src="images/card-moveis-1.jpg" alt="Imagem Móveis 1">
+            </div>
+
+            <div class="card-moveis">
+                <img src="images/background-home.jpg" alt="Imagem Móveis 1">
+            </div>
+
+            <div class="card-moveis">
+                <img src="images/card-moveis-3.jpg" alt="Imagem Móveis 1">
+            </div>
+
+            <div class="card-moveis">
+                <img src="images/card-moveis-4.jpg" alt="Imagem Móveis 1">
+            </div>
         </div>
 
-        <div class="card-moveis">
-            <img src="images/background-home.jpg" alt="Imagem Móveis 1">
-        </div>
+        <div class="sumir">
+            <div class="owl-carousel owl-theme owl-moveis">
+                <div class="item">
+                    <div class="card-moveis">
+                        <img src="images/card-moveis-1.jpg" alt="Imagem Móveis 1">
+                    </div>
+                </div>
 
-        <div class="card-moveis">
-            <img src="images/card-moveis-3.jpg" alt="Imagem Móveis 1">
-        </div>
+                <div class="item">
+                    <div class="card-moveis">
+                        <img src="images/background-home.jpg" alt="Imagem Móveis 1">
+                    </div>
+                </div>
 
-        <div class="card-moveis">
-            <img src="images/card-moveis-4.jpg" alt="Imagem Móveis 1">
+                <div class="item">
+                    <div class="card-moveis">
+                        <img src="images/card-moveis-3.jpg" alt="Imagem Móveis 1">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="card-moveis">
+                        <img src="images/card-moveis-3.jpg" alt="Imagem Móveis 1">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
 
     <section id="sobre">
         <div class="container-arrigo">
@@ -167,7 +228,7 @@
                         magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
                     </p>
 
-                    <a href="sobre.html" class="bt branco link-1-bold-rotunda uppercase">Saiba mais</a>
+                    <a href="sobre.html" class="bt branco link-3-bold-rotunda uppercase">Saiba mais</a>
                 </div>
             </div>
         </div>
@@ -330,7 +391,7 @@
                 </div>
 
                 <div class="bt-industria">
-                    <a href="contato.html" class="bt grande dourado link-1-bold-rotunda uppercase">solicite um
+                    <a href="contato.html" class="bt grande dourado link-3-bold-rotunda uppercase">solicite um
                         orçamento</a>
                 </div>
             </div>
@@ -338,7 +399,7 @@
     </section>
 
     <section id="categorias-moveis-carosel">
-        <div class="owl-carousel owl-theme owl-moveis">
+        <div class="owl-carousel owl-theme owl-moveis-2">
             <div class="item">
                 <div class="card-moveis">
                     <img src="images/card-moveis-1.jpg" alt="Imagem Móveis 1">
@@ -448,8 +509,8 @@
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
 
                 <div class="buttons">
-                    <a class="bt dourado link-1-bold-rotunda uppercase" href="">compre aqui</a>
-                    <a class="bt dourado link-1-bold-rotunda uppercase" href="">saiba mais</a>
+                    <a class="bt dourado link-3-bold-rotunda uppercase" href="">compre aqui</a>
+                    <a class="bt dourado link-3-bold-rotunda uppercase" href="">saiba mais</a>
                 </div>
             </div>
 
@@ -462,12 +523,11 @@
     </section>
 
     <section id="orcamento">
-
-        <img class="absolute-contato" src="images/absolute-contato.png" alt="Imagem contato">
-
         <div class="bg" style="background-image: url(images/bg-contato.jpg)">
+
+            <img class="absolute-contato" src="images/absolute-contato.png" alt="Imagem contato">
+
             <div class="container-arrigo">
-                <img src="images/bg-contato.jpg" alt="Imagem decorativa contato">
 
                 <form action="">
                     <div class="image">
@@ -480,38 +540,97 @@
 
                         <div class="input-content">
                             <label class="paragrafo-2-medium-rotunda" for="nome">Nome</label>
-                            <input  id="nome" class="paragrafo-2-regular-rotunda" type="text" name="nome" required placeholder="ex. Catarina de Oliveira">
+                            <input id="nome" class="paragrafo-2-regular-rotunda" type="text" name="nome" required
+                                placeholder="ex. Catarina de Oliveira">
                         </div>
 
                         <div class="input-content">
                             <label class="paragrafo-2-medium-rotunda" for="e-mail">E-mail</label>
-                            <input id="e-mail" class="paragrafo-2-regular-rotunda"  type="email" name="email" required placeholder="ex. catarinadeoli@email.com">
+                            <input id="e-mail" class="paragrafo-2-regular-rotunda" type="email" name="email" required
+                                placeholder="ex. catarinadeoli@email.com">
                         </div>
 
                         <div class="input-content">
                             <label class="paragrafo-2-medium-rotunda" for="telefone">Telefone</label>
-                            <input id="telefone" class="paragrafo-2-regular-rotunda" class="phone-mask" type="text" name="telefone" required placeholder="(DDD) 00000 - 0000">
+                            <input id="telefone" class="paragrafo-2-regular-rotunda" class="phone-mask" type="text"
+                                name="telefone" required placeholder="(DDD) 00000 - 0000">
                         </div>
 
-                        <div class="input-content">
+                        <div class="input-content textarea">
                             <label class="paragrafo-2-medium-rotunda" for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" class="paragrafo-2-regular-rotunda" name="mensagem" required placeholder="O que deseja nos dizer?">
+                            <textarea id="mensagem" class="paragrafo-2-regular-rotunda" name="mensagem" rows="5" cols=""
+                                required placeholder="O que deseja nos dizer?"></textarea>
                         </div>
 
-                        <button class="bt dourado link-1-bold-rotunda uppercase" type="submit">
-                            Enviar                            
+                        <button class="bt dourado link-3-bold-rotunda uppercase" type="submit">
+                            Enviar
                         </button>
                     </div>
                 </form>
             </div>
-
         </div>
     </section>
+
+    <footer>
+        <div class="container-arrigo">
+
+            <div class="logo-footer">
+                <img src="images/logo-footer.png" alt="Logo Rodapé">
+            </div>
+
+            <div class="links-footer">
+                <h3 class="titulo-4-bold-rotunda uppercase">MAPA DO SITE</h3>
+                <a class="link-3-regular-rotunda2" href="index.html">início</a>
+                <a class="link-3-regular-rotunda2" href="sobre.html">sobre a arrigo</a>
+                <a class="link-3-regular-rotunda2" href="">seu projeto</a>
+                <a class="link-3-regular-rotunda2" href="contato.html">contato</a>
+                <a class="link-3-regular-rotunda2" href="">móveis decorativos</a>
+            </div>
+
+            <div class="links-footer">
+                <h3 class="titulo-4-bold-rotunda uppercase">ambientes</h3>
+                <a class="link-3-regular-rotunda2" href="">cozinha</a>
+                <a class="link-3-regular-rotunda2" href="">escritório</a>
+                <a class="link-3-regular-rotunda2" href="">quarto</a>
+                <a class="link-3-regular-rotunda2" href="">sala</a>
+            </div>
+
+            <div class="links-footer">
+                <h3 class="titulo-4-bold-rotunda uppercase">CONTATO</h3>
+                <a class="link-3-regular-rotunda2" href="">(43) 9 9999-9999</a>
+                <a class="link-3-regular-rotunda2" href="">contato@arrigo.ind</a>
+                <a class="link-3-regular-rotunda2" href="">facebook</a>
+                <a class="link-3-regular-rotunda2" href="">instagram</a>
+            </div>
+
+            <div class="buttons-footer">
+                <a class="bt dourado link-3-bold-rotunda uppercase" href="">loja de móveis decorativos</a>
+                <a class="bt dourado link-3-bold-rotunda uppercase" href="contato.html">solicite um orçamento</a>
+            </div>
+        </div>
+
+        <div class="barra-footer">
+            <div class="container-arrigo">
+                <div class="box-left">
+                    <a class="link-3-regular-montserrat" href="">Política de Privacidade</a>
+                    <a class="link-3-regular-montserrat" href="">Termos de Uso</a>
+                </div>
+
+                <div class="box-right">
+                    <p class="link-3-regular-montserrat">Desenvolvido com carinho pela</p>
+                    <a href="https://www.codie.com.br/" target="_blank" class="logo-codie"><img
+                            src="images/imagem-barra-footer.png" alt="Logo Codie"></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
 
     <!--Bootstrap/Jquery/cdnjs-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
         </script>

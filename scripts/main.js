@@ -1,5 +1,17 @@
 $(document).ready(function () {
 
+const blockbar = document.querySelector('.block-bar');
+const menu = document.querySelector('.menu');
+const backgroundmenu = document.querySelector('.menu .background');
+
+blockbar.onclick = function() {
+    menu.classList.add('ativo')    
+}
+
+backgroundmenu.onclick = function () {
+    menu.classList.remove('ativo')
+}
+
 
 if ($('.owl-moveis')) {
     $('.owl-moveis').owlCarousel({
@@ -9,9 +21,34 @@ if ($('.owl-moveis')) {
         margin:30,
         dots: false,
         nav:true,
-        autoplayHoverPause:true,
-        stagePadding: 100
-    });
+        stagePadding: 100,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 10
+            },
+            1024: {
+                items: 2,
+                margin: 20
+            },
+            1700: {
+                items: 3,
+                margin: 25
+            }
+        }
+    })
+}
+
+if ($('.owl-moveis-2')) {
+    $('.owl-moveis-2').owlCarousel({
+        items:3,
+        loop:true,
+        center:true,
+        margin:30,
+        dots: false,
+        nav:true,
+        stagePadding: 100,
+    })
 }
 
 if ($('.owl-depoimentos')) {
