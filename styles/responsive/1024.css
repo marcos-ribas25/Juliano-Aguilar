@@ -12,9 +12,9 @@
     padding: 30px 5px;
   }
   .sumir {
-    display: none;
+    display: none !important;
   }
   .aparecer {
-    display: block;
+    display: block !important;
   }
 }

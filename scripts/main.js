@@ -25,16 +25,12 @@ if ($('.owl-moveis')) {
         responsive: {
             0: {
                 items: 1,
+                margin: 10,
+            },
+            500: {
+                items: 2,
                 margin: 10
             },
-            1024: {
-                items: 2,
-                margin: 20
-            },
-            1700: {
-                items: 3,
-                margin: 25
-            }
         }
     })
 }
