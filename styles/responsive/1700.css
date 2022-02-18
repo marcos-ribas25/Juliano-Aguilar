@@ -1,0 +1,14 @@
+@media only screen and (max-width: 1700px) {
+  header .box-right a + * {
+    margin-left: 49px;
+  }
+  #categorias-moveis {
+    padding: 30px 15px;
+  }
+  #categorias-moveis .sumir {
+    display: none!important;
+  }
+  #categorias-moveis .aparecer {
+    display: block!important;
+  }
+}
