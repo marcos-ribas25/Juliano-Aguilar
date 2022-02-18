@@ -5,4 +5,10 @@
   #categorias-moveis {
     padding: 30px 15px;
   }
+  #categorias-moveis .sumir {
+    display: none!important;
+  }
+  #categorias-moveis .aparecer {
+    display: block!important;
+  }
 }

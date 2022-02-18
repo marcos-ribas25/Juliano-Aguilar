@@ -522,6 +522,11 @@ header .box-right a + * {
 #depoimentos .owl-prev svg {
   stroke: var(--dourado-medio);
 }
+#depoimentos .owl-theme .owl-nav .owl-prev,
+#depoimentos .owl-theme .owl-nav .owl-next {
+  width: 25px;
+  height: 100%;
+}
 #depoimentos .owl-next {
   right: 0;
 }

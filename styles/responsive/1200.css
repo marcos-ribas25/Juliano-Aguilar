@@ -5,4 +5,11 @@
   header .box-right a + * {
     margin-left: 20px;
   }
+  #beneficios {
+    padding-bottom: 80px;
+  }
+  #beneficios .image-top-right,
+  #beneficios .image-bottom-left {
+    display: none;
+  }
 }

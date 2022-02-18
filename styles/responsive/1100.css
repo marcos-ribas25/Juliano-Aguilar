@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1100px) {
+  #sobre .container-arrigo {
+    justify-content: center;
+  }
+  #sobre .container-arrigo .image {
+    display: none;
+  }
+  #sobre .container-arrigo .text {
+    text-align: center;
+  }
+  #sobre .container-arrigo a {
+    margin: 50px auto 0;
+  }
+  #sobre .container-arrigo .box-sobre {
+    margin: 0;
+  }
+}

@@ -8,4 +8,44 @@
   #banner .absolute-image {
     display: none;
   }
+  #beneficios {
+    padding: 35px 0;
+  }
+  #beneficios .box-icones {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  #beneficios h2 + * {
+    margin-top: 40px;
+  }
+  #beneficios-industria .container-arrigo {
+    padding: 35px 15px 40px;
+  }
+  #beneficios-industria .container-arrigo .box-icones {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  #beneficios-industria .container-arrigo h2 + * {
+    margin-top: 25px;
+  }
+  #beneficios-industria .container-arrigo p + * {
+    margin-top: 40px;
+  }
+  #beneficios-industria .container-arrigo .box-icones + * {
+    margin-top: 40px;
+  }
+  #beneficios-industria .container-arrigo .bt-industria a {
+    max-width: 265px;
+    max-height: 40px;
+    margin-top: 35px;
+  }
+  #depoimentos {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  #depoimentos h2 {
+    font-size: 50px;
+  }
 }
