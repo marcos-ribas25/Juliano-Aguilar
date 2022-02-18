@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1100px) {
+  #sobre {
+    padding: 27px 0 35px;
+  }
   #sobre .container-arrigo {
     justify-content: center;
   }
@@ -9,9 +12,12 @@
     text-align: center;
   }
   #sobre .container-arrigo a {
-    margin: 50px auto 0;
+    margin: 15px auto 0;
   }
   #sobre .container-arrigo .box-sobre {
     margin: 0;
+  }
+  #sobre .container-arrigo .box-sobre h2 + * {
+    margin-top: 5px;
   }
 }
