@@ -17,18 +17,10 @@
   #categorias-moveis .aparecer {
     display: block;
   }
-  #sobre {
-    padding: 35px 0 43px;
+  .sumir {
+    display: none !important;
   }
-  #sobre .box-sobre {
-    padding-bottom: 0;
-  }
-  #sobre .box-sobre a {
-    max-width: 265px;
-    max-height: 40px;
-    margin-top: 35px;
-  }
-  #sobre .box-sobre h2 + * {
-    margin-top: 10px;
+  .aparecer {
+    display: block !important;
   }
 }
