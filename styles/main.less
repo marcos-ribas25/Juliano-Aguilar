@@ -172,16 +172,12 @@ body {
 }
 
 .menu {
-    display: none;
-}
-
-.menu {
     position: fixed;
     height: 100vh;
-    display: flex;
     justify-content: flex-end;
     width: 100%;
-    z-index: 0;
+    z-index: -1;
+    display: none;
 
     .background {
         background-color: rgba(0, 0, 0, 0.5);
@@ -218,6 +214,8 @@ body {
 
 .menu.ativo {
     z-index: 100;
+    display: flex;
+
 
     .background {
         display: block;
@@ -376,7 +374,7 @@ header {
 }
 
 #sobre {
-    padding-top: 45px;
+        padding: 45px 0 68px;
     background-color: var(--dourado-medio);
 
     .container-arrigo {
@@ -399,7 +397,6 @@ header {
         max-width: 575px;
         width: 100%;
         color: #fff;
-        padding-bottom: 68px;
 
             h2 {
                 margin-bottom: 0;

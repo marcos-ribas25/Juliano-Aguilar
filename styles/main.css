@@ -143,15 +143,12 @@ body {
   display: none;
 }
 .menu {
-  display: none;
-}
-.menu {
   position: fixed;
   height: 100vh;
-  display: flex;
   justify-content: flex-end;
   width: 100%;
-  z-index: 0;
+  z-index: -1;
+  display: none;
 }
 .menu .background {
   background-color: rgba(0, 0, 0, 0.5);
@@ -183,6 +180,7 @@ body {
 }
 .menu.ativo {
   z-index: 100;
+  display: flex;
 }
 .menu.ativo .background {
   display: block;
@@ -311,7 +309,7 @@ header .box-right a + * {
   gap: 1.56vw;
 }
 #sobre {
-  padding-top: 45px;
+  padding: 45px 0 68px;
   background-color: var(--dourado-medio);
 }
 #sobre .container-arrigo {
@@ -331,7 +329,6 @@ header .box-right a + * {
   max-width: 575px;
   width: 100%;
   color: #fff;
-  padding-bottom: 68px;
 }
 #sobre .box-sobre h2 {
   margin-bottom: 0;
