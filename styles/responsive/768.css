@@ -51,4 +51,7 @@
   #depoimentos h2 {
     font-size: 50px;
   }
+  #decorativos .container-arrigo .buttons {
+    justify-content: center;
+  }
 }

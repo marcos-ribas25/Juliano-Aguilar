@@ -11,4 +11,7 @@
   #beneficios .container-arrigo {
     max-width: 1120px;
   }
+  #decorativos .image {
+    width: 550px;
+  }
 }

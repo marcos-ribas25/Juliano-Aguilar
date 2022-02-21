@@ -24,4 +24,35 @@
   #categorias-moveis2 {
     padding: 15px 5px;
   }
+  #depoimentos {
+    padding-top: 26px;
+    padding-bottom: 16px;
+  }
+  #depoimentos .owl-nav .owl-prev,
+  #depoimentos .owl-nav .owl-next {
+    transform: translateX(0);
+    top: 0;
+    position: static;
+    margin-top: 15px;
+  }
+  #depoimentos .owl-nav .owl-prev + * {
+    margin-left: 25px;
+  }
+  #depoimentos .owl-carousel {
+    padding: 0 20px;
+  }
+  #depoimentos h2 + * {
+    margin-top: 26px;
+  }
+  #decorativos {
+    padding-top: 20px;
+  }
+  #decorativos .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  #decorativos .buttons .bt + * {
+    margin-left: 0!important;
+  }
 }

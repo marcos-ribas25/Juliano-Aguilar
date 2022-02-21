@@ -44,5 +44,46 @@
         padding: 15px 5px;
     }
 
+    #depoimentos {
+        padding-top: 26px;
+        padding-bottom: 16px;
+
+        .owl-nav {
+            .owl-prev, .owl-next {
+                transform: translateX(0);
+                top: 0;
+                position: static;
+
+                margin-top: 15px;
+            }
+
+            .owl-prev + * {
+                margin-left: 25px;
+            }
+        }
+
+        .owl-carousel {
+            padding: 0 20px;
+        }
+
+        h2 + * {
+            margin-top: 26px;
+        }
+
+    }
+
+    #decorativos {
+        padding-top: 20px;
+        .buttons {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+
+           .bt + * {
+               margin-left: 0!important;
+           }
+        }
+    }
+
 
 }

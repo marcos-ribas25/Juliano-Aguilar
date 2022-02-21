@@ -309,7 +309,7 @@ header .box-right a + * {
   gap: 1.56vw;
 }
 #sobre {
-  padding: 45px 0 68px;
+  padding-top: 45px;
   background-color: var(--dourado-medio);
 }
 #sobre .container-arrigo {
@@ -326,6 +326,7 @@ header .box-right a + * {
   object-fit: contain;
 }
 #sobre .box-sobre {
+  padding-bottom: 68px;
   max-width: 575px;
   width: 100%;
   color: #fff;
@@ -569,20 +570,21 @@ header .box-right a + * {
 #decorativos .container-arrigo .text .buttons {
   display: flex;
 }
-#decorativos .container-arrigo .text .buttons .bt {
-  width: 100%;
-}
 #decorativos .container-arrigo .text .buttons .bt + * {
   margin-left: 30px;
 }
 #decorativos .container-arrigo .image {
   max-width: 684px;
-  width: 100%;
+  height: 100%;
   position: relative;
 }
 #decorativos .container-arrigo .image .image-product {
   position: relative;
   z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
 }
 #decorativos .container-arrigo .image .absolute-image {
   position: absolute;
@@ -782,4 +784,11 @@ footer .barra-footer .box-right .logo-codie {
 }
 footer .barra-footer .box-right .logo-codie img {
   width: 100%;
+}
+#orcamento .bg {
+  height: 100vh;
+}
+#orcamento .bg .container-arrigo {
+  height: inherit;
+  align-items: center;
 }

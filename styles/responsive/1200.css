@@ -12,4 +12,14 @@
   #beneficios .image-bottom-left {
     display: none;
   }
+  #orcamento .bg .container-arrigo {
+    justify-content: center;
+  }
+  #orcamento .bg form .image + * {
+    margin-left: 0;
+  }
+  #orcamento .absolute-contato,
+  #orcamento .image {
+    display: none;
+  }
 }
