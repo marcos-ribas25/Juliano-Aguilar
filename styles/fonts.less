@@ -1,25 +1,24 @@
 @font-face {
-    font-family: 'Bebas';
-    src: url('../fonts/BebasNeue-Regular.ttf') format('truetype');
-    font-weight: 400;
-}
-
-
-@font-face {
-    font-family: 'rotunda';
-    src: url('../fonts/Rotunda-Bold.otf') format('truetype');
+    font-family: 'kepler';
+    src: url('../fonts/Kepler-Std-Bold_26102.ttf') format('truetype');
     font-weight: 700;
 }
 
 @font-face {
-    font-family: 'rotunda2';
-    src: url('../fonts/Rotunda-Medium.otf') format('truetype');
+    font-family: 'kepler-italic';
+    src: url('../fonts/Kepler-Std-Bold-Italic-Subhead_26091.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('../fonts/metropolis.regular.otf') format('truetype');
     font-weight: 400;
 }
 
 @font-face {
-    font-family: 'montserrat';
-    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-family: 'metropolis-italic';
+    src: url('../fonts/metropolis.regular-italic.otf') format('truetype');
     font-weight: 400;
 }
 
@@ -44,20 +43,20 @@ td {
 }
 
 //familias//
-[class*="-bebas"] {
-    font-family: Bebas;
+[class*="-kepler"] {
+    font-family: kepler;
 }
 
-[class*="-rotunda"] {
-    font-family: Rotunda;
+[class*="-kepler-italic"] {
+    font-family: kepler-italic;
 }
 
-[class*="-rotunda2"] {
-    font-family: Rotunda2;
+[class*="-metropolis"] {
+    font-family: metropolis;
 }
 
-[class*="-montserrat"] {
-    font-family: montserrat;
+[class*="-metropolis-italic"] {
+    font-family: metropolis-italic;
 }
 
 .uppercase {
@@ -91,7 +90,7 @@ td {
 
 //titulo
 [class*="titulo-1"] {
-    font-size: 92px;
+    font-size: 80px;
 }
 
 [class*="titulo-2"] {
@@ -99,157 +98,38 @@ td {
 }
 
 [class*="titulo-3"] {
-    font-size: 18px;
+    font-size: 48px;
 }
 
 [class*="titulo-4"] {
-    font-size: 16px;
+    font-size: 32px;
 }
 
-//paragrafos
-[class*="paragrafo-1"] {
+[class*="titulo-5"] {
     font-size: 18px;
 }
 
+//paragrafos
+
+[class*="paragrafo-1"] {
+    font-size: 32px;
+}
+
 [class*="paragrafo-2"] {
+    font-size: 18px;
+}
+
+[class*="paragrafo-3"] {
     font-size: 16px;
 }
 
 //links
 [class*="link-1"] {
-    font-size: 21px;
+    font-size: 20px;
 }
 
 [class*="link-2"] {
-    font-size: 18px;
-}
-
-[class*="link-3"] {
     font-size: 16px;
 }
 
-@media only screen and (max-width: 1400px) {
 
-    [class*="titulo-1"] {
-        font-size: 87px;
-    }
-
-    
-    [class*="titulo-2"] {
-        font-size: 61px;
-    }
-
-    [class*="paragrafo-1"] {
-        font-size: 17px;
-    }
-
-    //Links//
-    [class*="link-2"] {
-        font-size: 17px;
-    }
-
-    [class*="link-3"] {
-        font-size: 15.5px;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    [class*="titulo-1"] {
-        font-size: 82px;
-    }
-    
-    [class*="titulo-2"] {
-        font-size: 58px;
-    }
-
-    [class*="paragrafo-1"] {
-        font-size: 16px;
-    }
-
-    //links//
-    [class*="link-2"] {
-        font-size: 16px;
-    }
-
-    [class*="link-3"] {
-        font-size: 15px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-
-    [class*="titulo-1"] {
-        font-size: 71px;
-    }
-
-    [class*="titulo-2"] {
-        font-size: 54px;
-    }
-
-    [class*="paragrafo-1"] {
-        font-size: 15.5px;
-    }
-
-    //Links//
-    [class*="link-2"] {
-        font-size: 15.5px;
-    }
-
-    [class*="link-3"] {
-        font-size: 14.5px;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-    [class*="titulo-1"] {
-        font-size: 60px;
-    }
-
-    [class*="titulo-2"] {
-        font-size: 49px;
-    }
-
-    [class*="paragrafo-1"] {
-        font-size: 15px;
-    }
-    
-    //links//
-    [class*="link-2"] {
-        font-size: 15px;
-    }
-
-    [class*="link-3"] {
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    [class*="titulo-1"] {
-        font-size: 50px;
-    }
-
-    [class*="titulo-2"] {
-        font-size: 40px;
-    }
-
-    
-    [class*="titulo-3"] {
-        font-size: 16px;
-    }
-
-    [class*="paragrafo-1"] {
-        font-size: 14px;
-    }
-    
-}
-
-@media only screen and (max-width: 350px) {
-    [class*="titulo-1"] {
-        font-size: 40px;
-    }
-    
-    [class*="titulo-2"] {
-        font-size: 35px;
-    }
-
-}
