@@ -302,3 +302,75 @@ header nav a:hover {
 #redes .container-juliano .box-redes .bt {
   width: 100%;
 }
+#imoveis-disponiveis {
+  display: flex;
+  flex-direction: column;
+  color: #f5f5f5;
+  position: relative;
+}
+#imoveis-disponiveis .title {
+  color: var(--caramelo);
+  max-width: 500px;
+  margin-left: 12vw;
+  margin-bottom: 0;
+  padding-top: 42px;
+}
+#imoveis-disponiveis .title + * {
+  margin-top: 45px;
+}
+#imoveis-disponiveis .text {
+  background-color: #1e1e1e;
+  margin-left: 7.03vw;
+  max-width: 35.94vw;
+  padding: 75px 0 60px 93px;
+}
+#imoveis-disponiveis .text h2,
+#imoveis-disponiveis .text h3,
+#imoveis-disponiveis .text p {
+  margin-bottom: 0;
+}
+#imoveis-disponiveis .text h3 {
+  color: var(--caramelo);
+}
+#imoveis-disponiveis .text h3 + * {
+  margin-top: 14px;
+}
+#imoveis-disponiveis .text h2 {
+  letter-spacing: 3.2px;
+}
+#imoveis-disponiveis .text h2 + * {
+  margin-top: 25px;
+}
+#imoveis-disponiveis .text .beneficios p + p {
+  margin-top: 5px;
+}
+#imoveis-disponiveis .text .beneficios + * {
+  margin-top: 18px;
+}
+#imoveis-disponiveis .text .price {
+  color: var(--caramelo);
+  letter-spacing: 3.2px;
+}
+#imoveis-disponiveis .text .price + * {
+  margin-top: 30px;
+}
+#imoveis-disponiveis .text a {
+  max-width: 250px;
+}
+#imoveis-disponiveis .box-imoveis + * {
+  margin-top: 35px;
+}
+#imoveis-disponiveis .outros {
+  max-width: 220px;
+  margin-left: 11.72vw;
+}
+#imoveis-disponiveis .image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  max-width: 62.24vw;
+}
+#imoveis-disponiveis .image img {
+  width: 100%;
+}
