@@ -1,25 +1,11 @@
 $(document).ready(function () {
 
 
-if ($('.owl-moveis')) {
-    $('.owl-moveis').owlCarousel({
-        items:3,
-        loop:true,
-        center:true,
-        margin:30,
-        dots: false,
-        nav:true,
-        stagePadding: 100,
-        responsive: {
-            0: {
-                items: 1,
-                margin: 10,
-            },
-            500: {
-                items: 2,
-                margin: 10
-            },
-        }
+if ($('.owl-imoveis')) {
+    $('.owl-imoveis').owlCarousel({
+        items:1,
+        autoHeight:true,
+        nav:true,  
     })
 }
 
