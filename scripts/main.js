@@ -46,6 +46,17 @@ $(document).ready(function () {
         })
     }
 
+    if ($('.owl-feedback')) {
+        $('.owl-feedback').owlCarousel({
+            items: 3,
+            nav: true,
+            dots: false,
+            mouseDrag: false,
+            autoWidth: true,
+            margin: 110
+        })
+    }
+
 
     if ($(".cep-mask").length > 0) {
         $(".cep-mask").mask('99.999-999');
