@@ -424,3 +424,74 @@ header nav a:hover {
 #imoveis-disponiveis .nav button + button {
   margin-left: 20px;
 }
+#feedback {
+  color: #f5f5f5;
+}
+#feedback h2,
+#feedback h3,
+#feedback p {
+  margin-bottom: 0;
+}
+#feedback h2 {
+  text-align: center;
+  color: var(--caramelo);
+  letter-spacing: 0.96px;
+  line-height: 86px;
+  margin-bottom: 0;
+}
+#feedback h2 + * {
+  margin-top: 35px;
+}
+#feedback .container-juliano {
+  max-width: 1470px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#feedback .container-juliano .barra {
+  height: 333px;
+  border: 1px solid #ffffff;
+  opacity: 0.5;
+}
+#feedback .container-juliano .box-feedback {
+  max-width: 625px;
+}
+#feedback .container-juliano .box-feedback i {
+  width: 95px;
+  height: 61px;
+}
+#feedback .container-juliano .box-feedback i svg {
+  max-width: 100%;
+  max-height: 100%;
+  fill: var(--caramelo);
+  object-fit: contain;
+}
+#feedback .container-juliano .box-feedback i + * {
+  margin-top: 18px;
+}
+#feedback .container-juliano .box-feedback .title {
+  letter-spacing: 3.2px;
+}
+#feedback .container-juliano .box-feedback .title + * {
+  margin-top: 34px;
+}
+#feedback .container-juliano .box-feedback .descrition {
+  line-height: 24px;
+}
+#feedback .container-juliano .box-feedback .descrition + * {
+  margin-top: 40px;
+}
+#feedback .container-juliano .box-feedback .users {
+  display: flex;
+  align-items: center;
+}
+#feedback .container-juliano .box-feedback .users img {
+  max-width: 70px;
+  max-height: 70px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#feedback .container-juliano .box-feedback .users img + * {
+  margin-left: 31px;
+}
