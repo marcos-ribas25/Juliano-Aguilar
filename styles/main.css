@@ -6,6 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  background: url(../images/background-body.jpg);
   overflow-x: hidden !important;
 }
 *:target,
@@ -448,13 +449,11 @@ header nav a:hover {
   justify-content: space-between;
   align-items: center;
 }
-#feedback .container-juliano .barra {
-  height: 333px;
-  border: 1px solid #ffffff;
-  opacity: 0.5;
-}
 #feedback .container-juliano .box-feedback {
-  max-width: 625px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff !important;
+  padding: 30px;
+  border-radius: 10px;
 }
 #feedback .container-juliano .box-feedback i {
   width: 95px;
@@ -494,4 +493,13 @@ header nav a:hover {
 }
 #feedback .container-juliano .box-feedback .users img + * {
   margin-left: 31px;
+}
+#feedback .border-right-feedback::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  height: 100%;
+  width: 1px;
+  background-color: #fff;
 }

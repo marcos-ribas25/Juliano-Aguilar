@@ -7,7 +7,7 @@ $(document).ready(function () {
             dots: false,
             mouseDrag: false
         })
-        
+
         let contador = 0;
 
         const listItemsCarousel = $('.owl-imoveis .item')
@@ -18,29 +18,29 @@ $(document).ready(function () {
             $('.owl-imoveis').trigger('next.owl.carousel');
             contador = contador + 1
 
-            if(contador === numeroDeItens - 1) {
+            if (contador === numeroDeItens - 1) {
                 $('.nav-right-imoveis').addClass('disabled')
-            }else {
+            } else {
                 $('.nav-right-imoveis').removeClass('disabled')
             }
 
-            if(contador > 0) {
+            if (contador > 0) {
                 $('.nav-left-imoveis').removeClass('disabled')
             }
         })
 
         $('.nav-left-imoveis span').click(function () {
             $('.owl-imoveis').trigger('prev.owl.carousel');
-            
+
             contador = contador - 1
 
-            if(contador === 0) {
+            if (contador === 0) {
                 $('.nav-left-imoveis').addClass('disabled')
-            }else {
+            } else {
                 $('.nav-left-imoveis').removeClass('disabled')
             }
 
-            if(contador  < numeroDeItens - 1) {
+            if (contador < numeroDeItens - 1) {
                 $('.nav-right-imoveis').removeClass('disabled')
             }
         })
@@ -48,12 +48,25 @@ $(document).ready(function () {
 
     if ($('.owl-feedback')) {
         $('.owl-feedback').owlCarousel({
-            items: 3,
+            items: 2,
             nav: true,
             dots: false,
-            mouseDrag: false,
-            autoWidth: true,
-            margin: 110
+            margin: 100
+        })
+
+        const primerioItenAtivoNaTela = document.querySelector('.owl-feedback .owl-item.active');
+
+        primerioItenAtivoNaTela.classList.add('border-right-feedback')
+
+        $('.owl-feedback').on('changed.owl.carousel', function (event) {
+            const owlItem = $('.owl-feedback .owl-item');
+            owlItem.removeClass('border-right-feedback');
+
+            setTimeout(function () {
+                const owlItensActive = $('.owl-feedback .owl-item.active');
+                console.log(owlItensActive[0])
+                owlItensActive[0].classList.add('border-right-feedback');
+            }, 50);
         })
     }
 

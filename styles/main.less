@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  background: url(../images/background-body.jpg);
   overflow-x: hidden !important;
 }
 
@@ -545,15 +546,12 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        .barra {
-            height: 333px;
-            border: 1px solid #ffffff;
-            opacity: 0.5;
-        }
-
+        
         .box-feedback {
-            max-width: 625px;
+          background-color: rgba(255,255,255,0.1);
+          color: #fff !important;
+          padding: 30px;
+          border-radius:10px;
 
             i {
                 width: 95px;
@@ -604,7 +602,16 @@ header {
                 }
             }
         }
+
     }
 
-
+    .border-right-feedback::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -50px;
+      height: 100%;
+      width: 1px;
+      background-color: #fff;
+    }
 }
