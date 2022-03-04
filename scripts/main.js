@@ -49,12 +49,14 @@ $(document).ready(function () {
     if ($('.owl-feedback')) {
         $('.owl-feedback').owlCarousel({
             items: 2,
-            nav: true,
+            nav: false,
             dots: false,
+            slideBy: 2,
             margin: 100
         })
 
-        const primerioItenAtivoNaTela = document.querySelector('.owl-feedback .owl-item.active');
+
+        const primerioItenAtivoNaTela = document.querySelector('.owl-feedback .owl-item');
 
         primerioItenAtivoNaTela.classList.add('border-right-feedback')
 
@@ -64,28 +66,32 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 const owlItensActive = $('.owl-feedback .owl-item.active');
-                console.log(owlItensActive[0])
+                
                 owlItensActive[0].classList.add('border-right-feedback');
             }, 50);
         })
     
         let contador = 0;
 
+        const numeroDeItensAtivos = $('.owl-feedback .owl-item.active');
+
         const listItemsCarousel = $('.owl-feedback .item')
 
-        const numeroDeItens = listItemsCarousel.length
+        const numeroDeItens = Math.round(listItemsCarousel.length / numeroDeItensAtivos.length)
+
 
         $('.nav-right-feedback span').click(function () {
-         $('.owl-feedback').trigger('next.owl.carousel');
-            contador = contador +1
+
+            $('.owl-feedback').trigger('next.owl.carousel');
+            contador = contador + 1
 
             if (contador === numeroDeItens - 1) {
                 $('.nav-right-feedback').addClass('disabled')
             } else {
                 $('.nav-right-feedback').removeClass('disabled')
-            }  
-            
-            if (contator > 0 ) {
+            }
+
+            if (contador > 0) {
                 $('.nav-left-feedback').removeClass('disabled')
             }
         })
