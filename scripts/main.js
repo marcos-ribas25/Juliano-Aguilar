@@ -68,6 +68,43 @@ $(document).ready(function () {
                 owlItensActive[0].classList.add('border-right-feedback');
             }, 50);
         })
+    
+        let contador = 0;
+
+        const listItemsCarousel = $('.owl-feedback .item')
+
+        const numeroDeItens = listItemsCarousel.length
+
+        $('.nav-right-feedback span').click(function () {
+         $('.owl-feedback').trigger('next.owl.carousel');
+            contador = contador +1
+
+            if (contador === numeroDeItens - 1) {
+                $('.nav-right-feedback').addClass('disabled')
+            } else {
+                $('.nav-right-feedback').removeClass('disabled')
+            }  
+            
+            if (contator > 0 ) {
+                $('.nav-left-feedback').removeClass('disabled')
+            }
+        })
+
+        $('.nav-left-feedback span').click(function () {
+            $('.owl-feedback').trigger('prev.owl.carousel');
+
+            contador = contador - 1
+
+            if (contador === 0) {
+                $('.nav-left-feedback').addClass('disabled')
+            } else {
+                $('.nav-left-feedback').removeClass('disabled')
+            }
+
+            if (contador < numeroDeItens - 1) {
+                $('.nav-right-feedback').removeClass('disabled')
+            }
+        })
     }
 
 
