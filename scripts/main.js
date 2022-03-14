@@ -1,5 +1,18 @@
 $(document).ready(function () {
 
+    const blockbar = document.querySelector('.block-bar');
+    const menu = document.querySelector('.menu');
+    const backgroundmenu = document.querySelector('.menu .background');
+
+    blockbar.onclick = function () {
+        menu.classList.add('ativo')
+    }
+
+    backgroundmenu.onclick = function () {
+        menu.classList.remove('ativo')
+    }
+
+
     if ($('.owl-imoveis')) {
         $('.owl-imoveis').owlCarousel({
             items: 1,
@@ -66,11 +79,11 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 const owlItensActive = $('.owl-feedback .owl-item.active');
-                
+
                 owlItensActive[0].classList.add('border-right-feedback');
             }, 50);
         })
-    
+
         let contador = 0;
 
         const numeroDeItensAtivos = $('.owl-feedback .owl-item.active');
