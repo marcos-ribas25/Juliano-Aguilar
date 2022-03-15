@@ -85,6 +85,9 @@ td {
 [class*="titulo-5"] {
   font-size: 18px;
 }
+[class*="titulo-6"] {
+  font-size: 16px;
+}
 [class*="paragrafo-1"] {
   font-size: 32px;
 }

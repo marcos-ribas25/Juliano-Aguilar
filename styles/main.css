@@ -87,6 +87,7 @@ body {
 .bt.claro {
   background-color: #bb9256;
   color: #2d2d2d;
+  border-color: var(--cinza-escuro);
 }
 header {
   position: absolute;
@@ -119,6 +120,57 @@ header nav a + * {
 header nav a:hover {
   width: 275px;
   color: #f5f5f5;
+}
+.menu {
+  position: fixed;
+  height: 100vh;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: -1;
+  display: none;
+}
+.menu .background {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+.menu .box {
+  background-color: var(--dourado-medio);
+  display: none;
+  position: relative;
+  z-index: 2;
+  width: 40vh;
+  padding: 80px 40px 0;
+}
+.menu .box .box-link {
+  color: #fff;
+}
+.menu .box li + li {
+  margin-top: 10px;
+}
+.menu .box,
+.menu .background {
+  height: inherit;
+}
+.menu.ativo {
+  z-index: 100;
+  display: flex;
+}
+.menu.ativo .background {
+  display: block;
+}
+.menu.ativo .background:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+}
+.menu.ativo .box {
+  display: block;
+  background-color: var(--cinza-escuro);
 }
 .block-bar {
   width: 37px;
@@ -175,6 +227,13 @@ header nav a:hover {
 }
 #banner .container-juliano .text-banner {
   margin-bottom: 60px;
+  max-width: 974px;
+  max-height: 146px;
+}
+#banner .container-juliano .text-banner img {
+  width: 100%;
+  height: inherit;
+  object-fit: contain;
 }
 #banner .container-juliano .scroll {
   display: flex;
@@ -445,6 +504,7 @@ header nav a:hover {
 }
 #feedback .container-juliano {
   max-width: 1470px;
+  padding-bottom: 40px;
 }
 #feedback .container-juliano .box-feedback {
   background-color: rgba(255, 255, 255, 0.1);
@@ -504,6 +564,7 @@ header nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
 }
 #feedback .nav button:first-child {
   transform: rotate(-180deg);
@@ -539,8 +600,24 @@ header nav a:hover {
 #feedback .nav button + button {
   margin-left: 20px;
 }
+#blog .container-juliano {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
 #blog .container-juliano .title {
   color: var(--caramelo);
+}
+#blog .container-juliano .title + * {
+  margin-top: 40px;
+}
+#blog h1,
+#blog h2,
+#blog h3,
+#blog p {
+  margin-bottom: 0;
+}
+#blog .more {
+  padding-top: 25px;
 }
 .box-blog {
   height: 246px;
@@ -585,7 +662,126 @@ header nav a:hover {
 }
 .box-blog .container-text .text {
   max-width: 710px;
+  color: #fff;
 }
 .box-blog .container-text .text h3 {
   color: #fff;
+  letter-spacing: 3.2px;
+  line-height: 40px;
+}
+.box-blog .container-text .text a + * {
+  margin-top: 30px;
+}
+.box-blog + * {
+  margin-top: 40px;
+}
+#contato {
+  position: relative;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+#contato .absolute-image {
+  position: absolute;
+  top: 0;
+}
+#contato .container-juliano {
+  max-width: 1670px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  z-index: 2;
+}
+#contato .container-juliano h2 {
+  color: var(--caramelo);
+  max-width: 394px;
+  letter-spacing: 1.6px;
+  line-height: 86px;
+  text-align: right;
+  margin: 15px 75px -39px 0;
+  margin-top: 15px;
+  margin-right: 70px;
+  position: relative;
+  z-index: 2;
+}
+#contato .container-juliano .box-contato {
+  background-color: #1e1e1e;
+  padding: 70px 92px 60px;
+  max-width: 843px;
+  width: 100%;
+}
+#contato .container-juliano .box-contato p {
+  color: var(--caramelo);
+  letter-spacing: 1.6px;
+  margin-bottom: 0;
+}
+#contato .container-juliano .box-contato input,
+#contato .container-juliano .box-contato textarea {
+  width: 100%;
+  background-color: transparent;
+  border: solid 1px var(--caramelo);
+  color: #f5f5f5;
+}
+#contato .container-juliano .box-contato input {
+  height: 50px;
+  padding: 0 20px;
+}
+#contato .container-juliano .box-contato textarea {
+  resize: none;
+  padding: 15px 20px;
+}
+#contato .container-juliano .box-contato input + * {
+  margin-top: 15px;
+}
+#contato .container-juliano .box-contato + * {
+  margin-top: 10px;
+}
+#contato .buttons {
+  display: flex;
+  max-width: 843px;
+  width: 100%;
+  justify-content: space-between;
+}
+#contato .buttons .bt-contato {
+  max-width: 440px;
+  margin-top: 15px;
+}
+footer {
+  background-color: #1e1e1e;
+  padding-top: 80px;
+}
+footer .container-juliano {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+footer .container-juliano .logo-footer {
+  max-width: 250px;
+  max-height: 80px;
+  object-fit: contain;
+}
+footer .container-juliano .logo-footer img {
+  width: 100%;
+  height: inherit;
+}
+footer .container-juliano .links-footer {
+  display: flex;
+  flex-direction: column;
+  color: #f5f5f5;
+}
+footer .container-juliano .links-footer a {
+  color: #f5f5f5;
+  opacity: 0.5;
+}
+footer .container-juliano .links-footer a + * {
+  margin-top: 5px;
+}
+footer .barra-footer {
+  background-color: #000000;
+}
+footer .barra-footer .container-juliano {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  justify-content: flex-end;
 }
